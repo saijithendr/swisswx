@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-sys.path.insert(0, str(Path(__file__).parent.parent) + "/src/meteoschweiz")
+sys.path.insert(0, str(Path(__file__).parent.parent) + "/src/meteoswiss")
 
 
 class TestMetaParametersLoaderRealData:
