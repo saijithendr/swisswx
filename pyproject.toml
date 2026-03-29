@@ -10,7 +10,8 @@ readme = "README.md"
 authors = [
     {name = "Gangireddy Sai Jithendra", email = "jithenkumar1@gmail.com"}
 ]
-license = {file = "LICENSE"}
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.8"
 classifiers = [
     "Development Status :: 3 - Alpha",
