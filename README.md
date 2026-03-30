@@ -40,7 +40,7 @@ pip install meteoschweiz
 #### 1.1 Stations
 
 ```python
-from meteoswiss.metadata.stations import SwissWeatherStations
+from meteoschweiz.metadata.stations import SwissWeatherStations
 
 stations = SwissWeatherStations()
 stations_df = stations.load()  # returns all available weather stations in Switzerland
@@ -58,7 +58,7 @@ nearby = stations.find_nearby(lat=47.0, lon=7.4, radius_km=30)
 `MetaParametersLoader` loads parameter definitions from any MeteoSwiss CSV source URL.
 
 ```python
-from meteoswiss.metadata.parameters import MetaParametersLoader
+from meteoschweiz.metadata.parameters import MetaParametersLoader
 
 loader = MetaParametersLoader()
 
@@ -107,7 +107,7 @@ print(loader.summary())
 ### 2. Historic Weather Data
 
 ```python
-from meteoswiss.historic.historic_handler import HistoricWeatherHandler, MeteoSwissClient
+from meteoschweiz.historic.historic_handler import HistoricWeatherHandler, MeteoSwissClient
 
 client = MeteoSwissClient()
 historic_handler = HistoricWeatherHandler(
@@ -146,7 +146,7 @@ historic_handler.export_to_csv(result, "grenchen_june_2023.csv")
 ### 3. Local Forecast Data
 
 ```python
-from meteoswiss.forecasts.forecast_handler import LocalForecastHandler
+from meteoschweiz.forecasts.forecast_handler import LocalForecastHandler
 
 forecast_handler = LocalForecastHandler(
     stations_handler=stations,   # from section 1.1
