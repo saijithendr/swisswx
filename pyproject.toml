@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "meteoschweiz"
-version = "0.1.0"
+version = "0.1.4"
 description = "Python package for accessing and processing weather data from MeteoSwiss (Source: MeteoSwiss, CC BY 4.0)"
 readme = "README.md"
 authors = [
